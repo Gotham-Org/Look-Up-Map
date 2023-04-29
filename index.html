@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a>LOOK-UP INDIA</a>
+        </div>
+        <div class="nav-container">
+            <a href="#" id="nav-map" class="active" onclick="javascript:navActive(this.id)">Map</a>
+            <a href="#" id="nav-airports" onclick="javascript:navActive(this.id)">Airports</a>
+            <a href="#" id="nav-restaurants" onclick="javascript:navActive(this.id)">Restaurants</a>
+        </div>
+    </nav>
+
+    <div class="canvas-container">
+        <canvas id="canvas" width="800", height="952"></canvas>
+        <div class="info">
+            <div class="info-data">
+                <h2 id="pick">Pick a State</h2>
+                <p id="coord" class="coord"></p>
+
+                <h3 class="state" style="font-size: 30px;color: sandybrown; margin: 20px 0;"></h3>
+
+                <div class="buttons" id="buttons">
+                    <button id="btn-air"  onclick="makeActive(this.id)">Airports</button>
+                    <button  id="btn-res" onclick="makeActive(this.id)">Restaurants</button>
+                </div>
+
+                <div class="showAirports" id="showAirports"></div>
+                <div class="showRestaurants" id="showRestaurants"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="indianAirports">
+        <div class="only-airports">
+            <h2 style="margin: 20px 0 20px -100px;text-align: center;">Airports of India</h2>
+        </div>
+    </div>
+
+    <div class="indianRestaurants">
+        <div class="only-restaurants">
+            <h2 style="margin: 20px 0 20px -100px;text-align: center;">Top Restaurants of India</h2>
+        </div>
+    </div>
+
+</body>
+</html>

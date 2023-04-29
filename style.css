@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    /* background-color: black; */
+}
+
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+.logo a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: default;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-container a{
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.nav-container a:hover, .nav-container a.active{
+    color: sandybrown;
+}
+.canvas-container{
+    display: flex;
+}
+
+canvas{
+    margin: 20px;
+    cursor: pointer;
+    /* background-color: yellow; */
+}
+
+.info{
+    padding-top: 80px;
+    width: 100%;
+    /* background-color: pink; */
+}
+
+.info-data{
+    padding-left: 20px ;
+}
+
+.coord{
+    font-size: 25px;
+}
+.buttons{
+    display: none;
+    gap: 25px;
+}
+
+.buttons button{
+    width: 200px;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.buttons button:hover, .buttons button.active{
+    background-color: sandybrown;
+    color: white;
+}
+
+
+.only-airports{
+    display: none;
+    margin-top: 20px;
+    margin-left: 150px;
+    /* width: 100%; */
+    /* background-color: sandybrown; */
+}
+.only-restaurants{
+    display: none;
+    margin-top: 20px;
+    margin-left: 100px;
+    /* width: 100%; */
+    /* background-color: sandybrown; */
+}
+
+.indianAirports, .indianRestaurants{
+    display: flex;
+    justify-content: center;
+}
